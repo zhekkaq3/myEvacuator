@@ -1,0 +1,143 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 100;
+    transition: all 0.3s linear;
+}
+
+.navbar {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: Nunito;
+    cursor: pointer;
+    z-index: 100;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #ff8b00;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.icon-tel{
+    height: 30px;
+    margin-right: 16px;
+}
+
+.navbar ul.links {
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul.links li {
+    text-transform: uppercase;
+    padding: 0 15px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease all, 0s ease margin;
+    border: #ff8b00 solid;border-radius: 20px;
+}
+
+.navbar ul.links li a {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 24px;
+    color: #ff8b00;
+    transition: 0.4s ease all, 0s ease margin;
+
+}
+
+.navbar ul.links li:hover a {
+    cursor: pointer;
+    transform: scale(1.07);
+}
+
+@media screen and (max-width: 850px) {
+
+    .toggle {
+        position: absolute;
+        top: 32.5px;
+        right: 20px;
+        z-index: 99;
+        transform: translateY(-50%);
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .toggle>* {
+        
+        width: 80%;
+        height: 2px;
+        margin: 3px 0;
+    }
+
+    .line1, .line2, .line3 {
+        transition: all 0.1s linear;
+        background-color: black;
+    }
+
+    .navbar.collapsed .toggle .line1 {
+        transform: rotate(-45deg) translate(-4px, 5px);
+    }
+
+    .navbar.collapsed .toggle .line2 {
+        opacity: 0;
+    }
+
+    .navbar.collapsed .toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .navbar .links {
+        position: fixed;
+        z-index: 40;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        width: 45vw;
+        height: 100vh;
+    }
+
+    .navbar .links li:first-child {
+        margin-top: 80px;
+    }
+
+    .navbar.collapsed .links {
+        right: 0;
+    }
+
+    .navbar.collapsed .links li {
+        width: 100%;
+    }
+}
+
+.hide_header {
+    height: 78px;
+}

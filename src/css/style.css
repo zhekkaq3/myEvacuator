@@ -1,0 +1,276 @@
+@import url("nav.css");
+@import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body { 
+  font-family: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI";
+}
+
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* HERO */
+#hero {
+  background: linear-gradient(45deg, #e9ecef 0%, #fff 100%);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 100px;
+  padding: 100px 15px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-heading{
+  cursor: pointer;
+  font-size: 46px;
+  line-height: 1.35;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ff8b00;
+  margin: 16px 0;
+}
+
+.hero-desc {
+  color: rgb(54, 55, 57);
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 62px;
+}
+
+.hero_desc_item{
+  cursor: pointer;
+  color: #939393;
+  margin: 16px 0 16px 20px;
+  font-size: 18px;
+}
+
+.icon-hero{
+  height: 24px;
+  margin-right: 16px;
+  transform: translateY(4px);
+}
+
+.hero_desc_item:hover .icon-hero{
+  transform: translateY(-2px);
+  transition: all 0.3s ease-in-out;
+} 
+
+.hero-bg{
+  position: relative;
+  width: 30%;
+  height: 100%;
+}
+.hero-bg-img{
+  position: absolute;
+  top: 75px;
+  left: -250px;
+  height: 520px;
+}
+
+/* PRICE */
+#price{
+  padding: 60px 15px;
+}
+.price-heading{
+  cursor: pointer;
+  font-size: 46px;
+  line-height: 1.35;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ff8b00;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.price-desc{
+  color: rgb(54, 55, 57);
+  font-weight: 700;
+  font-size: 36px;
+  text-transform: uppercase;
+  line-height: 62px;
+  text-align: center;
+}
+
+.price-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.price-item{
+  cursor: pointer;
+  width: 29%;
+  height: 350px;
+  background-color: #eff0f2;
+  border-radius: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  transition: all 0.2s ease-in-out
+}
+
+.price-item:hover{
+  background-color: #dfe0e2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.01);
+}
+
+.price-item__img img {
+  width: 100%;
+}
+.price-item__title{
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #ff8b00;
+}
+.price-item__desc{
+  text-align: center;
+  font-size: 22px;
+  /* color: #939393; */
+  font-size: 18px;
+  font-weight: 600;
+}
+.j-center{
+  justify-content: center;
+  gap: 40px;
+}
+.price-footer-text{
+  font-size: 24px;
+  color: black;
+}
+
+.one_item {
+  margin: auto;
+}
+
+/* dop uslugi */
+
+#dop {
+  background-color: #eff0f2;;
+}
+
+.dop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.dop_list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.dop_item {
+  flex: 0 0 30%;
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.dop_item h3 {
+  text-align: center;
+  font-size: 22px;
+  color: #ff8b00;
+}
+
+.dop_item p {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+}
+
+/* /gallery */
+
+#gallery{
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+  flex-wrap: wrap;
+}
+
+/* footer */
+#footer {
+  background-color: rgb(51, 51, 51);
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding: 50px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer {
+  padding: 0 10px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between
+}
+
+.footer_description {
+  width: 60%;
+}
+
+.footer_description h3, .footer_rekvezit h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.footer_description p, .footer_rekvezit p{
+  line-height: 1.6;
+  font-size: 18px;
+}
+.footer_end span{
+  font-family: Nunito;
+    cursor: pointer;
+    z-index: 100;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: #ff8b00;
+}
+
+
