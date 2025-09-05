@@ -187,23 +187,19 @@ ul {
 
 .dop_list {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 16px;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .dop_item {
   flex: 0 0 30%;
-  height: 150px;
-  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  background-color: white;
-  border-radius: 10px;
 }
 
 .dop_item h3 {
