@@ -32,7 +32,7 @@ ul {
   overflow: hidden;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
-  background: linear-gradient(45deg, #e9ecef 0%, #fff 100%);
+  background: linear-gradient(180deg, #e9ecef 0%, #fff 100%);
 }
 
 .hero {
@@ -43,7 +43,6 @@ ul {
   padding-top: 100px;
   padding: 100px 15px;
   width: 100%;
-  overflow: hidden;
 }
 
 .hero-heading{
@@ -68,11 +67,11 @@ ul {
   cursor: pointer;
   color: #939393;
   margin: 16px 0 16px 20px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .icon-hero{
-  height: 24px;
+  height: 40px;
   margin-right: 16px;
   transform: translateY(4px);
 }
@@ -89,8 +88,8 @@ ul {
 }
 .hero-bg-img{
   position: absolute;
-  top: 100px;
-  left: -230px;
+  top: 180px;
+  left: -200px;
   height: 500px;
 }
 
