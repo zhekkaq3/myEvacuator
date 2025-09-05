@@ -29,6 +29,9 @@ ul {
 
 /* HERO */
 #hero {
+  overflow: hidden;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   background: linear-gradient(45deg, #e9ecef 0%, #fff 100%);
 }
 
@@ -86,9 +89,9 @@ ul {
 }
 .hero-bg-img{
   position: absolute;
-  top: 75px;
-  left: -250px;
-  height: 520px;
+  top: 100px;
+  left: -230px;
+  height: 500px;
 }
 
 /* PRICE */
@@ -103,7 +106,6 @@ ul {
   text-transform: uppercase;
   color: #ff8b00;
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .price-desc{
@@ -173,16 +175,36 @@ ul {
 }
 
 /* dop uslugi */
-
+/* 
 #dop {
-  background-color: #eff0f2;;
-}
+ 
+} */
 
 .dop {
+  position: relative;
+  overflow: hidden;
+  background-color: #eff0f2;
+  padding: 100px ;
+  overflow: hidden;
+  border-top: #ffffff00 solid;
+  border-radius: 30px;
+  background-image: url("../../src/img/dop_fon.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.dop_box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 0;
+  padding: 20px;
+  padding: 20px;
+  background-color: #ffffff86;
+  border-radius: 20px;
+}
+
+.dop_tittle{
+  color: #262626;
 }
 
 .dop_list {
@@ -204,8 +226,8 @@ ul {
 
 .dop_item h3 {
   text-align: center;
-  font-size: 22px;
-  color: #ff8b00;
+  font-size: 24px;
+  color: #262626;
 }
 
 .dop_item p {
@@ -229,8 +251,18 @@ ul {
   flex-wrap: wrap;
 }
 
+.itc-slider {
+  border: #ffffff00 solid;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 /* footer */
 #footer {
+  overflow: hidden;
+  border-top: #ffffff00 solid;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   background-color: rgb(51, 51, 51);
   display: flex;
   justify-content: center;
@@ -242,7 +274,7 @@ ul {
 }
 
 .footer {
-  padding: 0 10px;
+  padding: 0 20px;
   display: flex;
   align-items: start;
   justify-content: space-between
