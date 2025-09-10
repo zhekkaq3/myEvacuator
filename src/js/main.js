@@ -1,23 +1,37 @@
 
 const menuBtn = document.querySelector('.header__burger');
-const menu = document.querySelector('.header__nav');
+const menu = document.querySelector('.links');
+const navbar = document.querySelector('.navbar');
 
-const hideMenu = (event) => {
-  menu.classList.remove('collapsed');
-}
+const hideMenu = () => {
+    navbar.classList.remove('collapsed');
+};
 
-const closesMenu = (event) => !menu.contains(event.target) && hideMenu(event);
+const closeMenu = (event) => {
+    if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+        hideMenu();
+    }
+};
 
 menuBtn.addEventListener('click', (event) => {
-  event.stopPropagation();
-  menu.classList.toggle('collapsed');
+    event.stopPropagation();
+    navbar.classList.toggle('collapsed');
 });
 
-window.addEventListener('click', closesMenu);
+document.addEventListener('click', closeMenu);
+
+// Закрытие меню при изменении размера окна (если перешли на десктопный вид)
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 850) {
+        hideMenu();
+    }
+});
 
 document.addEventListener('DOMContentLoaded', () => {
-  ItcSlider.getOrCreateInstance('.slider');
-
+    // Инициализация слайдера, если он есть на странице
+    if (typeof ItcSlider !== 'undefined' && document.querySelector('.slider')) {
+        ItcSlider.getOrCreateInstance('.slider');
+    }
 });
 
 // ---------------------------------------------------------------------------------------
