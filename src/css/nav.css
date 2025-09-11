@@ -64,7 +64,6 @@
     transition: 0.4s ease all, 0s ease margin;
     border: 2px solid #ff8b00;
     border-radius: 20px;
-    background-color: rgba(255, 139, 0, 0.1);
 }
 
 .navbar ul.links li a {
@@ -77,12 +76,7 @@
     align-items: center;
 }
 
-.navbar ul.links li:hover {
-    background-color: #ff8b00;
-}
-
 .navbar ul.links li:hover a {
-    color: white;
     transform: scale(1.07);
 }
 

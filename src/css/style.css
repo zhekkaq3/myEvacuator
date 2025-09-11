@@ -76,7 +76,7 @@ body {
 }
 
 .hero_desc_item {
-  color: #939393;
+  color: #222121;
   margin: 16px 0 16px 20px;
   font-size: 24px;
   display: flex;
@@ -232,6 +232,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: start;
 }
 
 .dop_item h3 {
