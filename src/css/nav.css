@@ -66,6 +66,26 @@
     border-radius: 20px;
 }
 
+
+
+.navbar ul.links li.soc{
+    border: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.navbar ul.links li.soc:hover a{
+    transform: none;
+}
+
+.soc_a img{
+    height: 50px;
+}
+.navbar ul.links li.soc a:hover{
+    transform: scale(1.1);
+}
+
 .navbar ul.links li a {
     text-decoration: none;
     letter-spacing: 1px;
@@ -153,6 +173,8 @@
     .navbar.collapsed .links {
         right: 0;
         letter-spacing: normal;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
     }
 
     .navbar ul.links li a {

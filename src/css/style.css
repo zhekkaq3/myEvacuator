@@ -310,6 +310,14 @@ body {
   font-size: 16px;
   color: #ff8b00;
 }
+.footer_soc {
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+
 
 /* Медиа-запросы для адаптивности */
 @media (max-width: 1200px) {
