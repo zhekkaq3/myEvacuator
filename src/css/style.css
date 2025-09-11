@@ -303,7 +303,7 @@ body {
   font-size: 18px;
 }
 
-.footer_end span {
+.footer_end_logo {
   cursor: pointer;
   z-index: 100;
   letter-spacing: 1px;
