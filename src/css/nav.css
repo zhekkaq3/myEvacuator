@@ -138,15 +138,13 @@
         padding-top: 100px;
     }
 
-    .navbar .links li {
+    .navbar ul.links li {
         width: 100%;
+        font-size: 18px;
         margin: 10px 0;
-        border: none;
-        border-radius: 0;
-        height: auto;
-        padding: 15px;
+        height: 40px;
+        padding: 10px;
         justify-content: flex-start;
-        border-bottom: 1px solid #f0f0f0;
     }
 
     .navbar .links li:first-child {
