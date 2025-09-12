@@ -361,7 +361,6 @@ body {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 80px 15px;
   }
   
   .hero-bg {
